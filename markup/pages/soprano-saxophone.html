@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="uk">
+<head>
+      {{> head/head uk.defaults }}
+</head>
+
+<body>
+	<div id="fullpage">
+
+		{{> first-page/first-page firstPage.uk }}
+		{{> advantages/advantages advantages.uk }}
+		{{> characteristics/characteristics characteristics.uk }}
+		{{> price/price price.uk }}
+		{{> reviews/reviews reviews.uk }}
+		{{> gallery/gallery gallery.uk }}
+		{{> contacts/contacts contacts.uk }}
+
+	</div> 
+
+	{{> modal-checkout/modal-checkout modalCheckout.uk }}
+
+	<div id="overlay"></div>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+ 	<script src="%=static=%js/main%=hash=%%=min=%.js"></script>-->
+ 	
+ 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQAFM5yg80i3SV-iJJMrioCP8YrBhbMy0&callback=initMap" async defer></script>
+
+ 	
+ 	
+    </body>
+
+</html>

@@ -1,0 +1,17 @@
+<div name="reviews" id="reviews" class="reviews section">
+	<div class="container">
+		<div class="row">
+			<h1 class="light">{{ title }}</h1>
+			<div class="reviews-slider">
+				{{#each reviews}}
+					<div class="reviews-slide">
+						<div class="reviews-photo" style="background-image: url({{ this.img }})"></div>
+						<div class="reviews-name light">{{ this.name }}</div>
+						<div class="reviews-profession">{{ this.profession }}</div>
+						<div class="quotation light">{{ this.review }}</div>
+					</div>
+				{{/each }}
+			</div>
+		</div>
+	</div>
+</div>

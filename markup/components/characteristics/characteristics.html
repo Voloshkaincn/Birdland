@@ -1,0 +1,27 @@
+<div name="characteristics" id="characteristics" class="characteristics section">
+	<div class="section-bg" style="background-image: url(%=static=%img/content/bg3.png);"></div>
+	<div class="container">				
+		<div class="row">
+			<h1 class="light">{{  title }}</h1>
+			<h5 class="light">{{  subtitle }}</h5>
+			<p class="desc light">{{  text }}</p>
+		</div>
+		<div class="row">
+			<div class="characteristics-table">
+				{{#each tableRows}}
+				<div class="row">
+					<div class="text">{{ this.characteristic }}</div>
+					<div class="dots"></div>
+					<div class="text">{{ this.value }}</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+		<div class="row">
+			<button class="btn call-modal" data-modal="modal_checkout">{{ btn }}</button>
+		</div>
+		<div class="row">
+			<p class="warning">*{{ warning }}</p>
+		</div>
+	</div>
+</div>

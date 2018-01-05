@@ -1,0 +1,64 @@
+<div name="advantages" id ="advantages" class="advantage section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<h1 class="dark">{{ title }}</h1>
+			<p class="desc">{{ text }}</p>
+			<h4 class="dark">{{ subtitle }}</h4>
+
+			<div class="block-advantages">
+				<div class="block-advantages_left">
+					{{#each advantagesLeft}}
+					<div class="advantages_item">
+						<h4 class="dark">
+							<img src="%=static=%img/content/{{ this.icon }}" alt="icon">
+							{{ this.title }}
+						</h4>
+						<p>{{ this.text }}</p>
+					</div>
+					{{/each}}
+					<img class="saxophone" src="%=static=%img/content/safxophone-with-notes.png" alt="">
+				</div>
+				<div class="block-advantages_right">
+					{{#each advantagesRight}}
+					<div class="advantages_item">
+						<h4 class="dark">
+							{{ this.title }}
+							<img src="%=static=%img/content/{{ this.icon }}" alt="icon">			
+						</h4>
+						<p>{{ this.text }}</p>
+					</div>
+					{{/each}}
+				</div>
+				
+			</div>
+			<div class="row advantages_show-more">
+				<button class="advantages_show-more_down active">
+					Узнай какие еще преимущества есть у саксофона
+					<img src="%=static=%img/content/arrow.png"	alt="down">
+				</button>
+			</div>
+
+			<div class="block-advantages_center">
+				{{#each advantagesCenter}}
+				<div class="advantages_item">
+					<div class="advantages_icon">
+						<img src="%=static=%img/content/{{ this.icon }}" alt="icon">
+					</div>		
+					<p>{{ this.text }}</p>
+				</div>
+				{{/each}}
+			</div>
+
+			<div class="row advantages_show-more">
+				<button class="advantages_show-more_up">
+					Свернуть преимущества
+					<img src="%=static=%img/content/arrow.png"	alt="up"></button>
+			</div>
+
+
+			<h2 class="dark">{{ footer_title }}</h2>
+			<p class="center-text">{{ footer_text }}<a href="#">{{ footer_linkt }}</a><span>{{ footer_textContin }}</span></p>
+			<button class="btn call-modal" data-modal="modal_checkout">{{ btn }}<img src="%=static=%img/content/arrow-to-button.png" alt="arrow"></button>
+		</div>
+	</div>			
+</div>
